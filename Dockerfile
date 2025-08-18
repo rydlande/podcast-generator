@@ -7,8 +7,8 @@ RUN apt-get update && apt-get install -y \
     git
 
     
-RUN apt-get update && apt-get install -y build-essential libyaml-dev
-RUN pip3 install pyYAML
+RUN pip3 install --upgrade pip setuptools
+RUN pip3 install --break-system-packages pyYAML
 
 COPY feed.py /urs/bin/feed.py
 
