@@ -1,4 +1,4 @@
-name: "Podcast Generator"
+name: "Podcast Generator Eirin TEST"
 author: "Ray Villalobos && Eirin Rydland"
 description: "Generates a feed for podcast from YAML file"
 runs:
