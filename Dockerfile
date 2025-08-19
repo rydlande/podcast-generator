@@ -10,8 +10,8 @@ RUN apt-get update && apt-get install -y \
 RUN pip3 install --upgrade pip setuptools
 RUN pip3 install --break-system-packages pyYAML
 
-COPY feed.py /urs/bin/feed.py
+COPY feed.py /usr/bin/feed.py
 
 COPY entrypoint.sh /entrypoint.sh
 
-ENTRYPOINT [ "/entrypoin.sh" ]
+ENTRYPOINT [ "/entrypoint.sh" ]
