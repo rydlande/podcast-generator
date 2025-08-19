@@ -1,10 +1,10 @@
-FROM ubuntu:latest
+# FROM ubuntu:latest
 
 # Install dependencies
- RUN apt-get update && apt-get install -y \
-    && python3.10 \
-    && python3-pip \
-    && git
+# RUN apt-get update && apt-get install -y \
+#    && python3.10 \
+#    && python3-pip \
+#    && git
 
     
 #RUN pip3 install --upgrade pip setuptools
@@ -18,13 +18,13 @@ FROM ubuntu:latest
 
 
 
-# FROM python:3.10-slim
+ FROM python:3.10-slim
 
 # Install system dependencies
-# RUN apt-get update && apt-get install -y \
- #   git \
- #   && apt-get clean \
- #   && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y \
+    git \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
 
 # Upgrade pip and setuptools
 RUN pip install --upgrade pip setuptools
